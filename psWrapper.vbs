@@ -4,7 +4,7 @@ Set objShell=CreateObject("WScript.Shell")
 Set objFSO=CreateObject("Scripting.FileSystemObject")
 
 'enter the path for your PowerShell Script
-strPath="C:\Users\Alfonso\WorkSpace\detectTimeZone.ps1"
+strPath= CurrentDirectory & "detectTimeZone.ps1"
 
 'verify file exists
 If objFSO.FileExists(strPath) Then
