@@ -9,7 +9,9 @@ Prior to running the script you will need to run the following command in a Powe
 set-executionpolicy remotesigned 
 ```
 
-You can also both run the detectTimeZone.ps1 file, or run the vbs wrapper. This last one is specially useful if you want to run it from an automatic task as it will not pop up a powershell window.
+Run createTask.bat script. This will create an scheduled task that will run every time your computer gets connected to a Wifi network.
+
+If you don't want this to be automatic, you can also both run the detectTimeZone.ps1 file, or run the vbs wrapper. This last will prevent a powershell window to appear.
 
 ## How does it work
 
