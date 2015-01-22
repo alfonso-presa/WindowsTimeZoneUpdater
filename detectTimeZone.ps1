@@ -5,7 +5,6 @@ $location=Invoke-RestMethod("http://www.geoplugin.net/json.gp?ip=" + $ip)
 $latitude=$location.geoplugin_latitude
 $longitude=$location.geoplugin_longitude
 
-//This userid and key are only meant to be used in this scripts. You are not allowed to distribute or include them in any other piece of software.
 $url = "http://api.askgeo.com/v1/1309/913e044ce1af2d5dffbfa5eac6cd0eeed47db6bfd0e92e90dd5d80a01d0012bc/query.json?points=" + $latitude + "," + $longitude + "&databases=TimeZone"
 
 $tz = Invoke-RestMethod($url)
